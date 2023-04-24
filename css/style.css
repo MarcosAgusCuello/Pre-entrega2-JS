@@ -15,23 +15,6 @@ button:hover {
     background-color: #2980b9;
 }
 
-form {
-    display: flex;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 25px;
-    flex-direction: column;
-    align-items: center;
-}
-
-input {
-    padding: 10px;
-    width: 50%;
-    margin-bottom: 25px;
-    border-radius: 5px;
-    border: 1px solid #3498db;
-}
-
 .texto {
     text-align: center;
 }
@@ -89,10 +72,72 @@ h1 {
   }
 
 .buscador {
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
   margin-left: 25%;
-  margin-top: 40px;
+  width: 50%;
 }
 
 .h2-formulario {
   text-align: center;
+}
+
+.formulario {
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.85); 
+  box-shadow: 0px 0px 27px -3px rgba(0,0,0,0.85);
+  border-radius: 5px;
+}
+
+.informacion {
+  font-size: 20px;
+  color: black;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.infoInput {
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.infoInput::placeholder {
+  color: lightgray;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
 }

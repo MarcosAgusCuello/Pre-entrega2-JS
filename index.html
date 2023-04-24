@@ -27,9 +27,11 @@
             <li>Yamaha FZ-16 2.0</li>
         </ul>
     </div>
-
+<div>
     <input type="search" id="search" placeholder="Busca tu modelo" class="buscador">
-<div class="productos">
+</div>
+
+<div class="productos" id="productos">
     <div class="card">
         <img src="img/zr150.png" alt="Zanella zr 150">
         <div class="card-info">
@@ -40,7 +42,7 @@
           <p>Off-road</p>
           <p>$1600USD</p>
 
-          <button class="botoncito" id="comprar" onclick="comprar()">Comprar</button>
+          <button class="botoncito" id="boton" onclick="comprar()">Comprar</button>
         </div>
       </div>
 
@@ -185,23 +187,34 @@
       </div>
     </div>
 
-    <h2 class="h2-formulario">PUBLICA TU MODELO</h2>
-    <form id="infomotos-form">
-      <label for="marca">Marca</label>
-      <input type="text" id="marca" name="marca">
-      <label for="">Modelo</label>
-      <input type="text" id="" name="">
-      <label for="">Motor</label>
-      <input type="text" id="" name="">
-      <label for="">Metodo</label>
-      <input type="text" id="" name="">
-      <label for="">Tipo de moto</label>
-      <input type="text" id="" name="">
-      <label for="">Precio</label>
-      <input type="text" id="" name="">
+    
 
-      <button type="submit">Enviar</button>
-  </form>
+<div class="h2-formulario">
+  <h2>Queres publicar tu moto?</h2>
+  <button class="btn-f" id="btn-f">Llena el formulario</button>
+</div>
+
+
+    <form class="formulario" id="formu">
+      <h1 class="informacion">Rellena todos los datos para publicar tu moto</h1>
+      <label for="">Marca</label>
+      <input type="text" id="marca" name="marca" class="infoInput">
+      <label for="">Modelo</label>
+      <input type="text" id="modelo" name="modelo" class="infoInput">
+      <label for="">Motor</label>
+      <input type="number" id="motor" name="motor" class="infoInput">
+      <label for="">Metodo</label>
+      <input type="text" id="metodo" name="metodo" class="infoInput">
+      <label for="">Tipo de moto</label>
+      <input type="text" id="tipo" name="tipo" class="infoInput">
+      <label for="">Precio</label>
+      <input type="number" id="precio" name="precio" class="infoInput">
+      <button type="submit" class="btn-formulario" onclick="saveInfo()" id="btn-sub">Publicar</button>
+      <span class="close">X</span>
+    </form>
       
+    <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/card.js"></script>
 </body>
 </html>
