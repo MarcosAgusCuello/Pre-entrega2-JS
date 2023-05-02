@@ -18,7 +18,7 @@ form.addEventListener("submit", function(event) {
         <div class="card-info">
         <h2>${marca}</h2>
         <h3>${modelo}</h3>
-        <p>${motor}</p>
+        <p>${motor}CC</p>
         <p>${metodo}</p>
         <p>${tipo}</p>
         <p>$${precio}USD</p>

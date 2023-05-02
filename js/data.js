@@ -24,7 +24,10 @@ function saveData() {
     dataForm.metodo = document.getElementById("metodo").value;
     dataForm.tipo = document.getElementById("tipo").value;
     dataForm.precio = document.getElementById("precio").value;
-        console.log(dataFormJSON);
+    
+    localStorage.setItem("dataForm", JSON.stringify(dataForm));
+
+    console.log(dataFormJSON);
 }
     
 
