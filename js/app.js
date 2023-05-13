@@ -2,6 +2,7 @@ const botonFormulario = document.querySelector(".btn-f");
 const formulario = document.querySelector(".formulario");
 const cerrar = document.querySelector(".close");
 
+
 botonFormulario.addEventListener("click", ()=>{
     formulario.style.display="flex"
 })
@@ -9,5 +10,3 @@ botonFormulario.addEventListener("click", ()=>{
 cerrar.addEventListener("click", ()=>{
     formulario.style.display="none"
 })
-
-
